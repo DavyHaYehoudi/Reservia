@@ -5,6 +5,7 @@ body {
     border: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 5rem;
 }
 
 html,
@@ -46,13 +47,10 @@ menu,
 nav,
 output,
 section,
-mark
- {
+mark {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -72,4 +70,9 @@ section {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

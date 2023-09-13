@@ -1,0 +1,32 @@
+:root {
+    /* Blocs + Footer */
+    --bkg-1: #f2f2f2;
+    /* bouton search bar + loupe */
+    --bkg-2: #0065FC;
+    /* Pictogrammes des filtres */
+    --bkg-3: #deebff;
+    /* Etoile vide */
+    --bkg-4: rgb(221, 217, 217);
+
+    /* Etoile pleine + onglet nav + nav active + pictogramme des filtres + icône info*/
+    --color-1: black;
+    --color-2: #0065FC;
+
+    --weight-light: 200;
+    --weight-medium: 400;
+    --weight-bold: 600;
+    --weight-extra-bold: 800;
+
+    /* Titres */
+    --font-size-1: 2rem;
+    /* Boutons */
+    --font-size-2: 1.8rem;
+    /* Légendes + Footer */
+    --font-size-3: 1.6rem;
+    --font-size-4: 1.4rem;
+    --font-size-5: 1.2rem;
+    --font-size-6: 1rem;
+
+
+
+}
