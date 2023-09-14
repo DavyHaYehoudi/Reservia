@@ -27,6 +27,9 @@
     --font-size-5: 1.2rem;
     --font-size-6: 1rem;
 
+    --radius-frame: 20px;
+    --radius-thumbnail-ext: 16px;
+    --radius-thumbnail-int: 15px;
 
 
 }

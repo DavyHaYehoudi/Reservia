@@ -1,3 +1,11 @@
+/* Breakpoints	Bootstrap
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
 body {
     line-height: 1;
     margin: 0;
@@ -5,9 +13,7 @@ body {
     border: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 5rem;
 }
-
 html,
 body,
 div,
@@ -42,7 +48,6 @@ aside,
 figure,
 figcaption,
 footer,
-header,
 menu,
 nav,
 output,
@@ -53,26 +58,18 @@ mark {
     border: 0;
     vertical-align: baseline;
 }
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-menu,
-nav,
-section {
-    display: block;
+header{
+    margin-top: 10px;
 }
-
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
+body *{
+    border: 1px red solid;
+}
+
+

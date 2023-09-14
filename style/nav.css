@@ -1,0 +1,104 @@
+/* Breakpoints	Bootstrap
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
+.nav-reg li {
+    margin: 10px;
+}
+
+.nav-reg nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-reg ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-resp {
+    display: none;
+}
+
+.nav-reg ul li:last-child a,
+.nav-resp div a {
+    color: var(--color-2);
+}
+
+nav ul li:nth-child(1) a,
+nav ul li:nth-child(2) a {
+    position: relative;
+}
+
+nav ul li:nth-child(1) a:focus,
+nav ul li:nth-child(2) a:focus {
+    color: var(--color-2);
+}
+
+nav ul li:nth-child(1) a::after,
+nav ul li:nth-child(2) a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-2);
+    position: absolute;
+    top: -15px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:nth-child(1) a:hover::after,
+nav ul li:nth-child(2) a:hover::after,
+nav ul li:nth-child(1) a:focus::after,
+nav ul li:nth-child(2) a:focus::after {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width:575px) {
+    .nav-reg {
+        display: none;
+    }
+
+    .nav-resp {
+        display: block;
+    }
+
+    .nav-resp div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .nav-resp ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-resp ul li {
+        flex-grow: 1;
+        text-align: center;
+        position: relative;
+    }
+
+    .nav-resp ul li a {
+        display: block;
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        border-top: 15px solid transparent;
+    }
+
+    nav ul li:nth-child(1) a::after,
+    nav ul li:nth-child(2) a::after {
+        height: 5px;
+        top: auto;
+        bottom: -10px;
+    }
+}
