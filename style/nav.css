@@ -1,18 +1,11 @@
-/* Breakpoints	Bootstrap
-X-Small	None	<576px
-Small	sm	≥576px
-Medium	md	≥768px
-Large	lg	≥992px
-Extra large	xl	≥1200px
-Extra extra large	xxl	≥1400px */
-
 .nav-reg li {
     margin: 10px;
 }
 
 .nav-reg nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
 .nav-reg ul {
@@ -73,25 +66,24 @@ nav ul li:nth-child(2) a:focus::after {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 20px;
+        margin:0 10px;
     }
 
     .nav-resp ul {
         display: flex;
-        justify-content: space-around;
     }
 
     .nav-resp ul li {
         flex-grow: 1;
         text-align: center;
         position: relative;
+        border-bottom: 5px solid var(--color-1);
     }
 
     .nav-resp ul li a {
         display: block;
         padding: 10px;
         position: relative;
-        text-decoration: none;
         border-top: 15px solid transparent;
     }
 
@@ -99,6 +91,6 @@ nav ul li:nth-child(2) a:focus::after {
     nav ul li:nth-child(2) a::after {
         height: 5px;
         top: auto;
-        bottom: -10px;
+        bottom: -5px;
     }
 }

@@ -7,69 +7,52 @@ Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px */
 
 body {
-    line-height: 1;
-    margin: 0;
+    max-width: 2200px;
+    margin: auto;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
-html,
-body,
-div,
-span,
-object,
-h1,
-h2,
+
+@media screen and (min-width:1400px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    margin-top: 20px;
+}
+
+section {
+    margin: 40px 20px;
+}
+
+@media screen and (max-width:575px) {
+    section {
+        margin: 20px 10px;
+    }
+}
+
 h3,
 h4,
 h5,
-h6,
-p,
-a,
-em,
-img,
-small,
-strong,
-b,
-u,
-i,
-center,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-article,
-aside,
-figure,
-figcaption,
-footer,
-menu,
-nav,
-output,
-section,
-mark {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+h6 {
+    margin-block-start: inherit;
+    margin-block-end: inherit;
 }
-header{
-    margin-top: 10px;
-}
+
 ul {
     list-style: none;
+    padding: 0;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
-body *{
+
+/* body * {
     border: 1px red solid;
-}
-
-
+} */
