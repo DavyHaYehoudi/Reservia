@@ -12,9 +12,9 @@
 #search-bar {
     display: flex;
     align-items: center;
+    width: 350px;
     border: 1px solid var(--color-1);
     border-radius: 10px;
-    width: 350px;
 }
 
 #search-marker {
@@ -43,7 +43,6 @@ input[type="text"]::placeholder {
     color: #fff;
     border: none;
     border-radius: 0 10px 10px 0;
-    /* font-size: var(--font-size-5); */
 }
 
 /* *********** Filtres *********** */

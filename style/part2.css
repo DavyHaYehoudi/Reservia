@@ -14,47 +14,58 @@ Extra extra large	xxl	≥1400px */
 
 /* *********** Bloc Hébergements *********** */
 #bloc-heb {
-    background-color: rgb(182, 229, 182);
-    height: 700px;
-    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 65%;
+    height: auto;
+    background-color: var(--bkg-1);
+    border-radius: var(--radius-frame-bloc);
+}
+
+#bloc-heb-thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .heb-thumbnail-frame {
-    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    border:2px solid var(--color-1);
-    border-radius: var(--radius-thumbnail-ext) var(--radius-thumbnail-ext) 0 0;
+    width: 400px;
+    border-radius: var(--radius-thumbnail-ext);
+    background-color: white;
+    margin: 20px;
 }
 
 .heb-thumbnail-frame img {
+    display: block;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-thumbnail-ext) var(--radius-thumbnail-ext) 0 0;
+    margin: 0 auto 5px auto;
+    border-radius: var(--radius-thumbnail-int) var(--radius-thumbnail-int) 0 0;
 }
 
 .heb-thumbnail-bottom {
     padding-left: 15px;
-    margin-top: -10px;
 }
 
-/* .star-rating {
-    margin: -10px 0;
-} */
+.heb-thumbnail-bottom p {
+    margin-block-start: inherit;
+    margin-block-end: 0.5em;
+}
+
+.star-rating {
+    padding-bottom: 15px;
+}
 
 .star-rating li {
     display: inline;
-    margin: 0 3px;
 }
 
 /* *********** Bloc Populaires *********** */
 #bloc-pop {
-    background-color: rgb(12, 36, 103);
     height: 700px;
     width: 35%;
+    background-color: rgb(12, 36, 103);
 }

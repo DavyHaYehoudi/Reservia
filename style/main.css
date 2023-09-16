@@ -58,12 +58,15 @@ figure{
     margin-inline-end: inherit;
     margin-block-start: inherit;
     margin-block-end: inherit;
+    margin: 8px;
 }
 figcaption{
     margin-left: 15px;
     font-weight: var(--weight-bold);
   }
-
-body * {
-    border: 1px red solid;
+img {
+    object-fit:cover;
 }
+/* body * {
+    border: 1px red solid;
+} */

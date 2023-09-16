@@ -30,10 +30,10 @@
     --font-size-5: 1.2rem;
     --font-size-6: 1rem;
 
-    --radius-filters:40px;
-    --radius-frame: 20px;
-    --radius-thumbnail-ext: 16px;
-    --radius-thumbnail-int: 15px;
+    --radius-filters:2.5rem;
+    --radius-frame-bloc: 1.25rem;
+    --radius-thumbnail-ext: 2rem;
+    --radius-thumbnail-int: 1.5rem;
 
 
 }
