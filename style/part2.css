@@ -12,20 +12,34 @@ Extra extra large	xxl	≥1400px */
     gap: 20px
 }
 
+#blocs-heb-pop .fas.fa-star.selected {
+    color: var(--color-2);
+}
+
+#blocs-heb-pop .fas.fa-star {
+    color: var(--color-1);
+}
+
 /* *********** Bloc Hébergements *********** */
 #bloc-heb {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 65%;
-    height: auto;
     background-color: var(--bkg-1);
     border-radius: var(--radius-frame-bloc);
+    padding: 60px 0;
+}
+
+#bloc-heb h2,
+#read-more {
+    margin-left: 60px;
+    font-weight: var(--weight-bold);
 }
 
 #bloc-heb-thumbnails {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -33,16 +47,20 @@ Extra extra large	xxl	≥1400px */
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    width: 400px;
     border-radius: var(--radius-thumbnail-ext);
     background-color: white;
     margin: 20px;
 }
 
+.heb-thumbnail-frame figure {
+    width: 400px;
+}
+
 .heb-thumbnail-frame img {
     display: block;
     width: 100%;
-    margin: 0 auto 5px auto;
+    height: 300px;
+    margin: -2px auto 8px auto;
     border-radius: var(--radius-thumbnail-int) var(--radius-thumbnail-int) 0 0;
 }
 
@@ -63,9 +81,10 @@ Extra extra large	xxl	≥1400px */
     display: inline;
 }
 
+
 /* *********** Bloc Populaires *********** */
 #bloc-pop {
     height: 700px;
     width: 35%;
-    background-color: rgb(12, 36, 103);
+    background-color: var(--bkg-1);
 }
