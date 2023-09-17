@@ -92,7 +92,7 @@ Extra extra large	xxl	≥1400px */
 .pop-thumbnail-frame {
     display: flex;
     width: 550px;
-    height: 260px;
+    height: 265px;
     border-radius: var(--radius-thumbnail-ext);
     background-color: white;
     margin: 20px auto;
@@ -100,7 +100,7 @@ Extra extra large	xxl	≥1400px */
 
 .pop-thumbnail-frame figure {
     display: flex;
-    margin: 5px;
+    margin: 8px;
 }
 
 .pop-thumbnail-frame img {
@@ -155,16 +155,12 @@ Extra extra large	xxl	≥1400px */
 
     .pop-thumbnail-frame,
     .heb-thumbnail-frame {
-        width: 70%;
+        width: 100%;
         display: block;
     }
 
     .heb-thumbnail-frame figure {
-        width: 100%;
-    }
-
-    .heb-thumbnail-frame img {
-        width: 98%;
+        width: auto;
     }
 }
 
@@ -179,18 +175,84 @@ Extra extra large	xxl	≥1400px */
     .heb-thumbnail-frame {
         width: 100%;
     }
+
+    .pop-thumbnail-frame {
+        height: 200px;
+    }
+
+    .pop-thumbnail-frame img {
+        width: 40%;
+        height: 185px;
+    }
 }
 
 @media screen and (max-width:576px) {
+    h1 {
+        font-size: var(--font-size-2);
+        text-align: center;
+    }
+
     #blocs-heb-pop {
-        margin: 0;
+        margin: 40px 0;
+    }
+
+    #blocs-heb-pop h2 {
+        font-size: var(--font-size-3);
+        margin: 20px 0;
+    }
+
+    #bloc-heb,
+    #bloc-pop {
+        padding: 0;
     }
 
     #bloc-heb {
         background-color: initial;
+        width: 90%;
+
+    }
+
+    #bloc-pop {
+        padding: 0;
+    }
+
+    #bloc-pop-title {
+        flex-direction: initial;
+    }
+
+    #bloc-pop-title span {
+        margin-right: 20px;
+
     }
 
     .heb-thumbnail-frame {
-        border: 3px solid var(--color-1)
+        border: 3px solid var(--color-1);
+        margin: 20px 0;
+    }
+
+    .heb-thumbnail-frame figure {
+        width: 100%;
+        margin: 3px;
+    }
+
+    .heb-thumbnail-frame img {
+        width: 98%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    #bloc-pop figcaption,
+    #bloc-heb figcaption {
+        font-size: var(--font-size-6);
+    }
+
+    .pop-thumbnail-frame {
+        height: 145px;
+    }
+
+    .pop-thumbnail-frame img {
+        height: 130px;
     }
 }
