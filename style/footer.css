@@ -5,3 +5,38 @@ Medium	md	≥768px
 Large	lg	≥992px
 Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px */
+
+footer {
+    background-color: var(--bkg-1);
+}
+
+.footer--contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.footer--part {
+    margin: 30px;
+}
+
+footer h3 {
+    font-size: var(--font-size-4);
+    font-weight: var(--weight-bold);
+}
+
+footer li {
+    font-size:var(--font-size-5);
+    line-height: 2em;
+}
+
+@media screen and (max-width:768px){
+
+    .footer--contain {
+        width: 100%;
+        margin: 0;
+    }
+}
