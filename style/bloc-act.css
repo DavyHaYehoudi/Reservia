@@ -1,0 +1,124 @@
+/* Breakpoints	Bootstrap
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px */
+
+#bloc-act h2 {
+    margin-left: 60px;
+    font-weight: var(--weight-bold);
+}
+
+#bloc-act-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#bloc-act-thumbnails figcaption {
+    padding: 20px 0;
+}
+
+.act-thumbnail-frame,
+.act-thumbnail-duo {
+    width: 100%;
+}
+
+.act-thumbnail-frame {
+    border: 2px solid var(--color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius-frame-bloc);
+}
+
+.act-thumbnail-frame figure {
+    margin: -2px;
+}
+
+.act-thumbnail-frame img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-frame-bloc) var(--radius-frame-bloc) 0 0;
+}
+
+.act-thumbnail-frame:nth-child(1) img,
+.act-thumbnail-frame:nth-child(3) img {
+    height: 700px;
+}
+
+.act-thumbnail-duo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.act-thumbnail-duo:nth-child(2) img,
+.act-thumbnail-duo:nth-child(4) img {
+    height: 300px;
+}
+
+@media screen and (max-width:2050px) {
+    #act-container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    #act-container {
+        width: 90%;
+    }
+
+    #bloc-act-thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #act-container {
+        width: 80%;
+    }
+
+    #bloc-act-thumbnails {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .act-thumbnail-frame:nth-child(1) img,
+    .act-thumbnail-frame:nth-child(3) img {
+        height: 300px;
+    }
+
+    .act-thumbnail-frame {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #act-container {
+        width: 100%;
+    }
+
+    .act-thumbnail-frame {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #act-container {
+        width: 90%;
+    }
+
+    .act-thumbnail-frame:nth-child(1) img,
+    .act-thumbnail-frame:nth-child(3) img {
+        height: 250px;
+    }
+
+    #bloc-act h2 {
+        font-size: var(--font-size-3);
+        margin: 40px 0 10px 0;
+    }
+}

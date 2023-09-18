@@ -1,7 +1,7 @@
 @import "variables.css";
 @import "main.css";
 @import "nav.css";
-@import "part1.css";
-@import "part2.css";
-@import "part3.css";
+@import "bloc-hero.css";
+@import "blocs-heb-pop.css";
+@import "bloc-act.css";
 @import "footer.css";
