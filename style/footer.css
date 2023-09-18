@@ -1,11 +1,3 @@
-/* Breakpoints	Bootstrap
-X-Small	None	<576px
-Small	sm	≥576px
-Medium	md	≥768px
-Large	lg	≥992px
-Extra large	xl	≥1200px
-Extra extra large	xxl	≥1400px */
-
 footer {
     background-color: var(--bkg-1);
 }
@@ -13,9 +5,8 @@ footer {
 .footer--contain {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
     margin-left: 50px;
 }
 
@@ -29,14 +20,21 @@ footer h3 {
 }
 
 footer li {
-    font-size:var(--font-size-5);
+    font-size: var(--font-size-5);
     line-height: 2em;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
     .footer--contain {
+        display: initial;
         width: 100%;
-        margin: 0;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer--part {
+        margin: 30px 10px;
     }
 }
