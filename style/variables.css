@@ -31,10 +31,11 @@
     --font-size-5: 1.2rem;
     --font-size-6: 1rem;
 
-    --radius-filters:2.5rem;
+    --radius-filters: 2.5rem;
     --radius-frame-bloc: 1.25rem;
     --radius-thumbnail-ext: 2rem;
     --radius-thumbnail-int: 1.5rem;
 
-
+    /* Ombres cadres */
+    --box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
