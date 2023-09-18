@@ -118,17 +118,8 @@ input[type="text"]::placeholder {
 }
 
 /* *********** Medias Queries *********** */
-@media screen and (max-width:575px) {
-    
-    #filters div {
-        margin-left: 0;
-    }
-
-    #filters i {
-        font-size: initial;
-    }
-}
 @media screen and (max-width:768px){
+
     #search-bar {
         width: 90%;
         margin: auto;
@@ -150,5 +141,16 @@ input[type="text"]::placeholder {
     }
     #filters span{
         padding: 10px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    
+    #filters div {
+        margin-left: 0;
+    }
+
+    #filters i {
+        font-size: initial;
     }
 }

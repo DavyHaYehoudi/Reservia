@@ -59,27 +59,13 @@ Extra extra large	xxl	≥1400px */
     height: 300px;
 }
 
-@media screen and (max-width:2050px) {
-    #act-container {
-        width: 90%;
-        margin: auto;
-    }
-}
-
 @media screen and (max-width:1600px) {
-    #act-container {
-        width: 90%;
-    }
-
     #bloc-act-thumbnails {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width:1400px) {
-    #act-container {
-        width: 80%;
-    }
 
     #bloc-act-thumbnails {
         grid-template-columns: repeat(1, 1fr);
@@ -97,10 +83,6 @@ Extra extra large	xxl	≥1400px */
 
 @media screen and (max-width:768px) {
 
-    #act-container {
-        width: 100%;
-    }
-
     .act-thumbnail-frame {
         width: 100%;
         margin: 20px auto;
@@ -110,6 +92,7 @@ Extra extra large	xxl	≥1400px */
 @media screen and (max-width:576px) {
     #act-container {
         width: 90%;
+        margin: auto;
     }
 
     .act-thumbnail-frame:nth-child(1) img,
