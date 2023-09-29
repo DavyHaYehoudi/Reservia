@@ -24,13 +24,13 @@
     border-radius: 10px 0 0 10px;
 }
 
-input[type="text"] {
+input[type="search"] {
     flex-grow: 1;
     border: none;
     outline: none;
 }
 
-input[type="text"]::placeholder {
+input[type="search"]::placeholder {
     font-weight: var(--weight-bold);
     color: var(--color-3);
     font-size: var(--font-size-6);
